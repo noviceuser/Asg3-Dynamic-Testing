@@ -1,9 +1,6 @@
 ﻿using Library.Interfaces.Entities;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Library.Interfaces.Daos
 {
@@ -24,5 +21,4 @@ namespace Library.Interfaces.Daos
 
         List<IBook> FindBooksByAuthorTitle(string author, string title);
     }
-
 }

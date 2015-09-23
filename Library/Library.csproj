@@ -115,6 +115,15 @@
     <Compile Include="Controls\Borrow\ScanBookControl.xaml.cs">
       <DependentUpon>ScanBookControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Daos\BookDAO.cs" />
+    <Compile Include="Daos\LoanDAO.cs" />
+    <Compile Include="Daos\MemberDAO.cs" />
+    <Compile Include="Entities\Book.cs" />
+    <Compile Include="Entities\BookHelper.cs" />
+    <Compile Include="Entities\Loan.cs" />
+    <Compile Include="Entities\LoanHelper.cs" />
+    <Compile Include="Entities\Member.cs" />
+    <Compile Include="Entities\MemberHelper.cs" />
     <Compile Include="Hardware\CardReader.xaml.cs">
       <DependentUpon>CardReader.xaml</DependentUpon>
     </Compile>
@@ -185,10 +194,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Daos\" />
-    <Folder Include="Entities\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

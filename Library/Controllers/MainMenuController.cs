@@ -4,10 +4,6 @@ using Library.Interfaces.Controllers;
 using Library.Interfaces.Daos;
 using Library.Interfaces.Hardware;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Library.Controllers
 {
