@@ -71,10 +71,10 @@ namespace Library.Entities
 			{
 				throw new ArgumentException("Loan: constructor : bad parameters");
 			}
-			book = book;
-			borrower = borrower;
-			borrowDate = borrowDate;
-			dueDate = dueDate;
+            this.book = book;
+            this.borrower = borrower;
+            this.borrowDate = borrowDate;
+            this.dueDate = dueDate;
 			_id = 0;
 			state = LoanState.PENDING;
 		}

@@ -71,9 +71,9 @@ namespace Library.Entities
 			{
 				throw new ArgumentException("Member: constructor : bad parameters");
 			}
-			author = author;
-			title = title;
-			callNumber = callNumber;
+            this.author = author;
+            this.title = title;
+            this.callNumber = callNumber;
 			id = bookID;
 			state = BookState.AVAILABLE;
 			loan = null;
@@ -89,7 +89,7 @@ namespace Library.Entities
 			{
 				throw new ApplicationException(string.Format("Illegal operation in state : {0}", state));
 			}
-			loan = loan;
+            this.loan = loan;
 			state = BookState.ON_LOAN;
 		}
 

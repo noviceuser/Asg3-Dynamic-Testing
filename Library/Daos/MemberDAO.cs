@@ -42,7 +42,7 @@ namespace Library.Daos
             {
                 throw new ArgumentException(string.Format("MemberDAO : constructor : helper cannot be null.", new object[0]));
             }
-            helper = helper;
+            this.helper = helper;
             memberDict = new Dictionary<int, IMember>();
             nextID = 1;
         }

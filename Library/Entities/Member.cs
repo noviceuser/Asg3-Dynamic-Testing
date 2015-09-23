@@ -97,7 +97,6 @@ namespace Library.Entities
 				{
 					((IDisposable)enumerator).Dispose();
 				}
-				return flag;
 			}
 		}
 
@@ -163,9 +162,9 @@ namespace Library.Entities
 			{
 				throw new ArgumentException("Member: constructor : bad parameters");
 			}
-			firstName = firstName;
-			lastName = lastName;
-			contactPhone = contactPhone;
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.contactPhone = contactPhone;
 			emailAddress = email;
 			id = memberID;
 			loanList = new List<ILoan>();

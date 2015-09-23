@@ -46,7 +46,7 @@ namespace Library.Daos
             {
                 throw new ArgumentException(string.Format("LoanDAO : constructor : helper cannot be null.", new object[0]));
             }
-            helper = helper;
+            this.helper = helper;
             loanDict = new Dictionary<int, ILoan>();
             NextID = 1;
         }
@@ -142,7 +142,6 @@ namespace Library.Daos
             {
                 ((IDisposable)enumerator).Dispose();
             }
-            return loan;
         }
 
         public ILoan GetLoanByID(int id)
