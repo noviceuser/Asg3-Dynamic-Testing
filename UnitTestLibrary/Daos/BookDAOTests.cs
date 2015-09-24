@@ -48,7 +48,7 @@ namespace Library.Daos.Tests
         public void AddBookTest()
         {
             DateTime methodStartTime = DateTime.Now;
-            IBook expected = null;
+            IBook expected = new Book("test","test", "test",123);
 
             //Parameters
             string author = "test";
